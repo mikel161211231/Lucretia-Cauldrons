@@ -1176,8 +1176,41 @@ console.log("Cantidad total de cauldrons de madera rotos en otoño: "+  totalBro
 
 console.log("\n--------------------------------------------------------------------------------------------------\n");
 
-
 // 6.- Mostrar la Id y magic_description de los cauldron llamados "Brassicaceae"
+
+console.log("6.- Mostrar la Id y magic_description de los cauldron llamados -Brassicaceae-\n");
+
+for (let i = 0; i < data.cauldrons.winter_seasson.length; i++) {
+    
+    if (data.cauldrons.winter_seasson[i].name === "Brassicaceae") {
+        console.log("Winter "+ i +" | id: "+ data.cauldrons.winter_seasson[i].id +" | magic description: "+ data.cauldrons.winter_seasson[i].magic_description);
+        
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.summer_seasson.length; i++) {
+    
+    if (data.cauldrons.summer_seasson[i].name === "Brassicaceae") {
+        console.log("Winter "+ i +" | id: "+ data.cauldrons.summer_seasson[i].id +" | magic description: "+ data.cauldrons.winter_seasson[i].magic_description);
+    } 
+}
+
+
+for (let i = 0; i < data.cauldrons.spring_seasson.length; i++) {
+    
+    if (data.cauldrons.spring_seasson[i].magic_description === "Brassicaceae") {
+        console.log("Winter "+ i +" | id: "+ data.cauldrons.spring_seasson[i].id +" | magic description: "+ data.cauldrons.winter_seasson[i].magic_description);
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.autumn_seasson.length; i++) {
+    
+    if (data.cauldrons.autumn_seasson[i].name === "Brassicaceae") {
+        console.log("Winter "+ i +" | id: "+ data.cauldrons.autumn_seasson[i].id +" | magic description: "+ data.cauldrons.winter_seasson[i].magic_description);
+    } 
+}
+
+console.log("\n--------------------------------------------------------------------------------------------------\n");
 
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
 
