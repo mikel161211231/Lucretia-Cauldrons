@@ -1320,3 +1320,57 @@ console.log("\n-----------------------------------------------------------------
 
 // 10.- Mostrar el listado de posibles colores de cauldrons, sin repetir color.
 
+console.log("10.- Mostrar el listado de posibles colores de cauldrons, sin repetir color.\n");
+
+let colors = [];
+
+
+for (let i = 0; i < data.cauldrons.winter_seasson.length; i++) {
+    
+    for (let j = 0; j < colors.length; j++) {
+        
+        if (!isColorInArray(colors, data.cauldrons.winter_seasson[i].color)) {
+            colors.push(data.cauldrons.winter_seasson[i].color);
+        } 
+    }
+}
+
+for (let i = 0; i < data.cauldrons.summer_seasson.length; i++) {
+    
+    if (!isColorInArray(colors, data.cauldrons.summer_seasson[i].color)) {
+        colors.push(data.cauldrons.summer_seasson[i].color);
+    }  
+}
+
+
+for (let i = 0; i < data.cauldrons.spring_seasson.length; i++) {
+    
+    if (!isColorInArray(colors, data.cauldrons.spring_seasson[i].color)) {
+        colors.push(data.cauldrons.spring_seasson[i].color);
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.autumn_seasson.length; i++) {
+    
+    if (!isColorInArray(colors, data.cauldrons.autumn_seasson[i].color)) {
+        colors.push(data.cauldrons.autumn_seasson[i].color);
+    }  
+}
+
+for (let i = 0; i < colors.length; i++) {
+    console.log("Color "+ i +" - "+ colors[i]);
+    
+}
+
+function isColorInArray(colors, color) {
+    let isColor = false;
+
+    for (let i = 0; i < colors.length; i++) {
+        if (colors[i] === color) {
+            isColor = true;
+        }        
+    }
+    return isColor;
+}
+
+console.log("\n--------------------------------------------------------------------------------------------------\n");
