@@ -1214,6 +1214,51 @@ console.log("\n-----------------------------------------------------------------
 
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
 
+console.log("7.- Mostrar el porcentaje de cauldrons dañados separados por temporada\n");
+
+
+totalBrokenCauldronsWinter = 0;
+totalBrokenCauldronsSummer = 0;
+totalBrokenCauldronsAutumn = 0;
+totalBrokenCauldronsSpring = 0;
+
+
+for (let i = 0; i < data.cauldrons.winter_seasson.length; i++) {
+    
+    if (data.cauldrons.winter_seasson[i].damaged) {
+        totalBrokenCauldronsWinter++;
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.summer_seasson.length; i++) {
+    
+    if (data.cauldrons.summer_seasson[i].damaged) {
+        totalBrokenCauldronsSummer++;
+    } 
+}
+
+
+for (let i = 0; i < data.cauldrons.spring_seasson.length; i++) {
+    
+    if (data.cauldrons.spring_seasson[i].damaged) {
+        totalBrokenCauldronsSpring++;
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.autumn_seasson.length; i++) {
+    
+    if (data.cauldrons.autumn_seasson[i].damaged) {
+        totalBrokenCauldronsAutumn++;
+    } 
+}
+
+console.log("Porcentaje de cauldrons rotos en invierno: "+  (totalBrokenCauldronsWinter*100)/totalCauldronsWinter +"%");
+console.log("Porcentaje de cauldrons rotos en verano: "+  (totalBrokenCauldronsSummer*100)/totalCauldronsSummer +"%");
+console.log("Porcentaje de cauldrons rotos en primavera: "+  (totalBrokenCauldronsSpring*100)/totalCauldronsSpring +"%");
+console.log("Porcentaje de cauldrons rotos en otoño: "+  (totalBrokenCauldronsAutumn*100)/totalCauldronsAutumn +"%");
+
+console.log("\n--------------------------------------------------------------------------------------------------\n");
+
 // 8.- Mostrar el porcentaje de cauldrons de "Plexiglass" en "winter_seasson"
 
 // 9.- Mostrar el número de cauldrons de color "Orange" en buen estado
