@@ -1042,12 +1042,56 @@ console.log("Cantidad total de cauldrons en verano: "+  totalCauldronsSummer);
 console.log("Cantidad total de cauldrons en primavera: "+  totalCauldronsSpring);
 console.log("Cantidad total de cauldrons en otoño: "+  totalCauldronsAutumn);
 
+console.log("\n--------------------------------------------------------------------------------------------------\n");
+
+// 3.- Mostrar la cantidad de Cauldrons rotos agrupados por temporada
+
+console.log("3.- Mostrar la cantidad de Cauldrons rotos agrupados por temporada\n");
+
+let totalBrokenCauldronsWinter = 0;
+let totalBrokenCauldronsSummer = 0;
+let totalBrokenCauldronsAutumn = 0;
+let totalBrokenCauldronsSpring = 0;
+
+
+for (let i = 0; i < data.cauldrons.winter_seasson.length; i++) {
+    
+    if (data.cauldrons.winter_seasson[i].damaged) {
+        totalBrokenCauldronsWinter++;
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.summer_seasson.length; i++) {
+    
+    if (data.cauldrons.summer_seasson[i].damaged) {
+        totalBrokenCauldronsSummer++;
+    } 
+}
+
+
+for (let i = 0; i < data.cauldrons.spring_seasson.length; i++) {
+    
+    if (data.cauldrons.spring_seasson[i].damaged) {
+        totalBrokenCauldronsSpring++;
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.autumn_seasson.length; i++) {
+    
+    if (data.cauldrons.autumn_seasson[i].damaged) {
+        totalBrokenCauldronsAutumn++;
+    } 
+}
+
+
+console.log("Cantidad total de cauldrons rotos en invierno: "+  totalBrokenCauldronsWinter);
+console.log("Cantidad total de cauldrons rotos en verano: "+  totalBrokenCauldronsSummer);
+console.log("Cantidad total de cauldrons rotos en primavera: "+  totalBrokenCauldronsSpring);
+console.log("Cantidad total de cauldrons rotos en otoño: "+  totalBrokenCauldronsAutumn);
+
 
 console.log("\n--------------------------------------------------------------------------------------------------\n");
 
-
-
-// 3.- Mostrar la cantidad de Cauldrons rotos agrupados por temporada
 
 // 4.- Mostrar el color de los cauldron con magic_description "Naproxen"
 
