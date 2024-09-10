@@ -1092,8 +1092,42 @@ console.log("Cantidad total de cauldrons rotos en otoño: "+  totalBrokenCauldro
 
 console.log("\n--------------------------------------------------------------------------------------------------\n");
 
-
 // 4.- Mostrar el color de los cauldron con magic_description "Naproxen"
+
+console.log("4.- Mostrar el color de los cauldron con magic_description -Naproxen-\n");
+
+
+for (let i = 0; i < data.cauldrons.winter_seasson.length; i++) {
+    
+    if (data.cauldrons.winter_seasson[i].magic_description === "Naproxen") {
+        console.log("Winter "+ i +" color "+ data.cauldrons.winter_seasson[i].color);
+        
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.summer_seasson.length; i++) {
+    
+    if (data.cauldrons.summer_seasson[i].magic_description === "Naproxen") {
+        console.log("Summer "+ i +" color "+ data.cauldrons.summer_seasson[i].color);
+    } 
+}
+
+
+for (let i = 0; i < data.cauldrons.spring_seasson.length; i++) {
+    
+    if (data.cauldrons.spring_seasson[i].magic_description === "Naproxen") {
+        console.log("Spring "+ i +" color "+ data.cauldrons.spring_seasson[i].color);
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.autumn_seasson.length; i++) {
+    
+    if (data.cauldrons.autumn_seasson[i].magic_description === "Naproxen") {
+        console.log("Autumn "+ i +" color "+ data.cauldrons.autumn_seasson[i].color);
+    } 
+}
+
+console.log("\n--------------------------------------------------------------------------------------------------\n");
 
 // 5.- Mostrar el total de cauldrons de madera "Wood" rotos, suma de todas las temporadas
 
