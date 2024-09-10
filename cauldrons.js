@@ -1026,8 +1026,26 @@ totalCauldrons += data.cauldrons.autumn_seasson.length + data.cauldrons.spring_s
 console.log("Cantidad total de cauldrons: "+  totalCauldrons);
 
 
+console.log("\n--------------------------------------------------------------------------------------------------\n");
 
 // 2- Mostrar la cantidad de cauldrons separados por temporada
+console.log("2- Mostrar la cantidad de cauldrons separados por temporada\n");
+
+let totalCauldronsWinter = data.cauldrons.winter_seasson.length;
+let totalCauldronsSummer = data.cauldrons.summer_seasson.length;
+let totalCauldronsAutumn = data.cauldrons.autumn_seasson.length;
+let totalCauldronsSpring = data.cauldrons.spring_seasson.length;
+
+
+console.log("Cantidad total de cauldrons en invierno: "+  totalCauldronsWinter);
+console.log("Cantidad total de cauldrons en verano: "+  totalCauldronsSummer);
+console.log("Cantidad total de cauldrons en primavera: "+  totalCauldronsSpring);
+console.log("Cantidad total de cauldrons en otoño: "+  totalCauldronsAutumn);
+
+
+console.log("\n--------------------------------------------------------------------------------------------------\n");
+
+
 
 // 3.- Mostrar la cantidad de Cauldrons rotos agrupados por temporada
 
