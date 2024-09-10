@@ -1131,6 +1131,52 @@ console.log("\n-----------------------------------------------------------------
 
 // 5.- Mostrar el total de cauldrons de madera "Wood" rotos, suma de todas las temporadas
 
+console.log("5.- Mostrar el total de cauldrons de madera -Wood- rotos, suma de todas las temporadas\n");
+
+totalBrokenCauldronsWinter = 0;
+totalBrokenCauldronsSummer = 0;
+totalBrokenCauldronsAutumn = 0;
+totalBrokenCauldronsSpring = 0;
+
+
+for (let i = 0; i < data.cauldrons.winter_seasson.length; i++) {
+    
+    if (data.cauldrons.winter_seasson[i].damaged && (data.cauldrons.winter_seasson[i].type === "Wood")) {
+        totalBrokenCauldronsWinter++;
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.summer_seasson.length; i++) {
+    
+    if (data.cauldrons.summer_seasson[i].damaged && (data.cauldrons.summer_seasson[i].type === "Wood"))  {
+        totalBrokenCauldronsSummer++;
+    } 
+}
+
+
+for (let i = 0; i < data.cauldrons.spring_seasson.length; i++) {
+    
+    if (data.cauldrons.spring_seasson[i].damaged && (data.cauldrons.spring_seasson[i].type === "Wood")) {
+        totalBrokenCauldronsSpring++;
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.autumn_seasson.length; i++) {
+    
+    if (data.cauldrons.autumn_seasson[i].damaged && (data.cauldrons.autumn_seasson[i].type === "Wood")) {
+        totalBrokenCauldronsAutumn++;
+    } 
+}
+
+
+console.log("Cantidad total de cauldrons de madera rotos en invierno: "+  totalBrokenCauldronsWinter);
+console.log("Cantidad total de cauldrons de madera rotos en verano: "+  totalBrokenCauldronsSummer);
+console.log("Cantidad total de cauldrons de madera rotos en primavera: "+  totalBrokenCauldronsSpring);
+console.log("Cantidad total de cauldrons de madera rotos en otoño: "+  totalBrokenCauldronsAutumn);
+
+console.log("\n--------------------------------------------------------------------------------------------------\n");
+
+
 // 6.- Mostrar la Id y magic_description de los cauldron llamados "Brassicaceae"
 
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
