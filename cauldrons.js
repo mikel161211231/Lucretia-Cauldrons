@@ -1011,8 +1011,21 @@ const data = {
     }
 }
 
+console.log("\n--------------------------------------------------------------------------------------------------\n");
 
 // 1.- Mostrar la cantidad total de cauldrons
+
+console.log("1.- Mostrar la cantidad total de cauldrons\n");
+
+let totalCauldrons = 0;
+
+
+    
+totalCauldrons += data.cauldrons.autumn_seasson.length + data.cauldrons.spring_seasson.length + data.cauldrons.summer_seasson.length + data.cauldrons.winter_seasson.length; 
+
+console.log("Cantidad total de cauldrons: "+  totalCauldrons);
+
+
 
 // 2- Mostrar la cantidad de cauldrons separados por temporada
 
