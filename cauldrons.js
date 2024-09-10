@@ -1278,5 +1278,45 @@ console.log("\n-----------------------------------------------------------------
 
 // 9.- Mostrar el número de cauldrons de color "Orange" en buen estado
 
+console.log("9.- Mostrar el número de cauldrons de color -Orange- en buen estado\n");
+
+let orangeQuantity = 0;
+
+for (let i = 0; i < data.cauldrons.winter_seasson.length; i++) {
+    
+    if (!data.cauldrons.winter_seasson[i].damaged && (data.cauldrons.winter_seasson[i].color === "Orange")) {
+        orangeQuantity++;
+        
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.summer_seasson.length; i++) {
+    
+    if (!data.cauldrons.summer_seasson[i].damaged && (data.cauldrons.winter_seasson[i].color === "Orange")) {
+        orangeQuantity++;
+    } 
+}
+
+
+for (let i = 0; i < data.cauldrons.spring_seasson.length; i++) {
+    
+    if (!data.cauldrons.spring_seasson[i].damaged && (data.cauldrons.winter_seasson[i].color === "Orange")) {
+        orangeQuantity++;
+    } 
+}
+
+for (let i = 0; i < data.cauldrons.autumn_seasson.length; i++) {
+    
+    if (!data.cauldrons.autumn_seasson[i].damaged && (data.cauldrons.winter_seasson[i].color === "Orange")) {
+        orangeQuantity++;
+    } 
+}
+
+console.log("Cauldrons de color -Orange- en buen estado: "+ orangeQuantity);
+
+
+console.log("\n--------------------------------------------------------------------------------------------------\n");
+
+
 // 10.- Mostrar el listado de posibles colores de cauldrons, sin repetir color.
 
